@@ -3,7 +3,7 @@ This organization contains demo solution for Infrastructure as Code in Azure usi
 
 ## Naming conventions used in this organization
 - **Tenant** is whole company, we use only one tenant here.
-- **Subscription** is unit of ownership in Azure which can container one or more environments and one or more projects. In order to learn easily in this repo I am using Resource Groups instead of subscriptions, but principles are the same, just one level higher.
+- **Subscription** is unit of ownership in Azure which can contain one or more environments and one or more projects. In order to learn easily in this repo I am using Resource Groups instead of subscriptions, but principles are the same, just one level higher.
 - **Project** can also be understood as business application or group of applications, etc. apps that are needed to deliver e-commerce solution.
 - **Environment** is specific instance of project such as dev, test or prod.
 
@@ -16,7 +16,7 @@ Note: when comming from different clouds it is good to know that subscription eq
 ## Landing zone structure
 Purpose of this section is to automate shared infrastructure including central hub for routing, firewall or monitoring and creation of individual subscriptions including networking, RBAC or policies.
 
-For simplicity authoring process is very simple, see projects and modules for more complex examples from process perspective.
+For simplicity authoring process is very basic, see projects and modules for more complex examples from process perspective.
 
 ```mermaid
 graph TD;
