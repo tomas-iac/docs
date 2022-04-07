@@ -22,10 +22,10 @@ For simplicity authoring process is very basic, see projects and modules for mor
 graph TD;
     main{main} --> sub(Subscription module);
     main{main} --> shared(Shared environment module);
-    sub..99((sub..99)) -- yaml definition --> main;
+    sub01((sub01)) -- yaml definition --> main;
     sub03((sub03)) -- yaml definition --> main
     sub02((sub02)) -- yaml definition --> main;
-    sub01((sub01)) -- yaml definition --> main;
+    sub..99((sub..99)) -- yaml definition --> main;
     inputs((inputs)) -- tfvars --> main;
     sub --> Network;
     sub --> RBAC;
